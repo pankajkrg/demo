@@ -8,9 +8,8 @@ provider "aws" {
 # EC2 INSTANCE
 # -------------------------------
 resource "aws_instance" "web" {
-  ami           = "ami-04808bdb94be6720e"  # Amazon Linux 2 AMI in ap-south-1
-  instance_type = "t3.micro"
-  security_groups = [aws_security_group.web_sg.name]
+  ami           = "ami-04808bdb94be6720e"  
+  instance_type = "t3.mimcro"
 
   tags = {
     Name = "Terraform-HCP-EC2"
